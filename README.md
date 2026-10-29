@@ -59,7 +59,7 @@ If you open a file's S3 URL directly, you get Access Denied. Only CloudFront can
 - **Labs used public buckets, this doesn't.** My course labs made the website bucket public. Here the bucket stays locked and CloudFront is the only way in.
 - **Read the checkbox before you click.** "Allow export" on the certificate form would have cost about $86 for this certificate. The default is free.
 - **Build in small pieces.** I did the bucket first, then CloudFront, then the custom domain, so each mistake was easy to find.
-
+- **CloudFront caches pages.** After I fixed a link and re-uploaded the file, the live site kept serving the old version until I created an invalidation.
 ## How to deploy
 
 1. Create an ACM certificate in us-east-1 that covers your site name.

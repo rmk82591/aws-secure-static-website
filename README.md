@@ -44,7 +44,7 @@ The certificate and domain live outside the stack, so the rebuild just reuses th
 
 If you open a file's S3 URL directly, you get Access Denied. Only CloudFront can fetch it.
 
-![S3 direct access denied](docs/images/s3-direct-access-denied.png)
+![S3 direct access denied](s3-direct-access-denied.png)
 
 ## Cost
 

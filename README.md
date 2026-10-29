@@ -19,7 +19,7 @@ flowchart LR
 - Serves a static site from a private S3 bucket through CloudFront
 - Redirects HTTP to HTTPS with a free ACM certificate (TLS 1.2 minimum)
 - Runs on a custom domain through a Route 53 alias record
-- Builds everything with CloudFormation. The domain, certificate ARN, and hosted zone ID are parameters, so nothing account-specific lives in this repo.
+- Builds the website resources with CloudFormation. The domain, certificate ARN, and hosted zone ID are parameters, so nothing account-specific lives in this repo.
 
 ## Security choices
 

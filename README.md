@@ -1,6 +1,6 @@
 # Secure Static Website on AWS
 
-A simple static website on AWS, built in a secure way: private storage, HTTPS, and audit logging. The whole thing is one CloudFormation template, so I can delete it and rebuild it whenever I want.
+A simple static website on AWS, built in a secure way: private storage, HTTPS, and audit logging. The website itself is one CloudFormation template, so I can delete it and rebuild it whenever I want. The certificate, hosted zone, and CloudTrail are set up separately.
 
 **Live site:** https://site.rmktest.click
 
@@ -51,7 +51,7 @@ If you open a file's S3 URL directly, you get Access Denied. Only CloudFront can
 - Route 53 hosted zone: about $0.50/month
 - ACM certificate: free
 - CloudTrail (first trail, management events): free, plus pennies for log storage
-- S3 and CloudFront: [real number]
+- S3 and CloudFront: under $1 so far, as of Oct 29
 
 ## Lessons learned
 

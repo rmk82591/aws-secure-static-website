@@ -48,10 +48,14 @@ If you open a file's S3 URL directly, you get Access Denied. Only CloudFront can
 
 ## Cost
 
-- Route 53 hosted zone: about $0.50/month
+Checked November 5, 2026 on my AWS bill, month to date:
+
+- Route 53 hosted zone: $0.50, the monthly fee
+- S3: $0.01
+- CloudFront: $0.00 so far
+- CloudTrail: $0.00 (the first trail's management events are free, and its log storage shows up under S3)
 - ACM certificate: free
-- CloudTrail (first trail, management events): free, plus pennies for log storage
-- S3 and CloudFront: under $1 so far, as of Oct 29
+- Total so far: $0.51, about 5% of my $10 monthly budget alert
 
 ## Lessons learned
 
